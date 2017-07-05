@@ -64,6 +64,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Device was launched with M
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=23
+# Camera
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.camera.shutter.disable=1
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -119,6 +121,9 @@ PRODUCT_PACKAGES += \
     Gello
 
 # Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.shutter.disable=1
+
 PRODUCT_PACKAGES += \
     NeoVision6
 
