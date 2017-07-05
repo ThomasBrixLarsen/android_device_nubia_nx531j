@@ -830,7 +830,6 @@ service config-zram /system/bin/sh /system/etc/init.qcom.zram.sh
 on property:sys.boot_completed=1
     start qcom-post-boot
     start qti-testscripts
-    start config-zram
 
 service atfwd /system/bin/ATFWD-daemon
     class late_start
